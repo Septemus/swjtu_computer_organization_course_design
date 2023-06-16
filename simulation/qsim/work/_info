@@ -1,0 +1,157 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Computer_Organization\course_design\simulation\qsim
+vcomputer
+Z1 IoC[U;UMBB5JGR9>ld`;>92
+Z2 VOiCZWDY<e3@Clkb6R;bD]2
+Z3 dC:\Computer_Organization\course_design\simulation\qsim
+Z4 w1686236932
+Z5 8course_design.vo
+Z6 Fcourse_design.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|course_design.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 Anbk<TWP9chPlFEoFhA:42
+!s85 0
+Z11 !s108 1686236933.511000
+Z12 !s107 course_design.vo|
+!s101 -O0
+vcomputer_vlg_check_tst
+!i10b 1
+Z13 !s100 D?FNDnbPbQR76@aT=L8QT1
+Z14 I7?9PHT]zUo:c<KO25<_KJ1
+Z15 V3k3maFj5@84O28Co^^U2G0
+R3
+Z16 w1686236931
+Z17 8Waveform1.vwf.vt
+Z18 FWaveform1.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z19 !s108 1686236933.616000
+Z20 !s107 Waveform1.vwf.vt|
+Z21 !s90 -work|work|Waveform1.vwf.vt|
+!s101 -O0
+R9
+vcomputer_vlg_sample_tst
+!i10b 1
+Z22 !s100 dhZ=]kDi?BX^`KS1c:YX[2
+Z23 Izj]>;ai98Df@ZDE6Wc?SE3
+Z24 Va8IiX6j70;m9IJg;kjX3B2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vcomputer_vlg_vec_tst
+!i10b 1
+Z25 !s100 ?H[:hSO>do9MWlb7k]c5Q1
+Z26 I>1GYT3FX1dQ5H3AON1AEj1
+Z27 V2?<Bzjb[WJizdH7>F:UPP1
+R3
+R16
+R17
+R18
+Z28 L0 1531
+R7
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R9
+vreg_function
+Z29 I1_c<LJDl2]mm4hRP^R90m2
+Z30 VdllMh4Alnf:9>>m<KiW@02
+R3
+Z31 w1686136215
+R5
+R6
+L0 31
+R7
+r1
+31
+R9
+Z32 !s100 4BWMHJ4gRkUN:[GP8[MSL3
+Z33 !s108 1686136217.030000
+R12
+R8
+!i10b 1
+!s85 0
+!s101 -O0
+vreg_function_vlg_check_tst
+Z34 IDiY32RUb9oE4;7KH3izUF3
+Z35 V<;Tk^5]PZ0CS@GUTJ5Pde2
+R3
+Z36 w1686136214
+Z37 8Waveform.vwf.vt
+Z38 FWaveform.vwf.vt
+L0 61
+R7
+r1
+31
+Z39 !s108 1686136217.140000
+Z40 !s107 Waveform.vwf.vt|
+Z41 !s90 -work|work|Waveform.vwf.vt|
+R9
+Z42 !s100 k=?ddMli@^Dl0H0:adTnP1
+!i10b 1
+!s85 0
+!s101 -O0
+vreg_function_vlg_sample_tst
+Z43 I8:E1R3IDf<:PIcHWBQ2FL2
+Z44 VD4<;9QC?3lU9kZ5NGaOc60
+R3
+R36
+R37
+R38
+L0 29
+R7
+r1
+31
+R39
+R40
+R41
+R9
+Z45 !s100 <27kAmdV:`U?9J;znXJaz3
+!i10b 1
+!s85 0
+!s101 -O0
+vreg_function_vlg_vec_tst
+Z46 Io6jR63QNLkDT=IeJj6VEo0
+Z47 VZ]Zz9h]L8E;f1c`COR^a50
+R3
+R36
+R37
+R38
+Z48 L0 737
+R7
+r1
+31
+R39
+R40
+R41
+R9
+Z49 !s100 f7;I8LSjgC41Eij7I8c_A3
+!i10b 1
+!s85 0
+!s101 -O0

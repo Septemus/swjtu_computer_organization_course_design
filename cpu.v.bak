@@ -1,0 +1,84 @@
+module execute(
+	input clk,
+	input [7:0] M_data_in,
+	output write_read
+);
+	reg IR[15:0];
+	reg A[7:0];
+	always@(clk)
+	begin
+		case(state)
+			st_0:
+			begin
+				if(clk)
+				begin
+					IR<={M_data_in,8'h00};
+					write_read<=0;
+					PC<=PC+1;
+				end
+				else 
+				begin
+					A<=Ry;
+					MAR<=PC;
+					state<=st_1;
+				end
+			end
+			st_1:
+			
+			begin
+			
+			
+			
+			
+				if(clk)
+				begin
+					write_read<=0;
+					case(OP)
+						Load: R0<={4'h0,IR[11:8]};
+						Move: RX<=A;
+						Shr:	RX<={1'b0,RX[7:1]};
+						Shl:  RX<={RX[6:0],1'b0};
+						Add:	RX<=RX+A;
+						Sub:	RX<=RX-A;
+						And:	RX<=RX&A;
+						Or:	RX<=RX|A;
+						Xor:	RX<=RX^A;
+						Swap:	RY<=RX;
+					endcase
+				end
+				else 
+				begin
+					if(OP==Stop)
+					begin
+						state<=st_1;
+					end
+					else if(OP==Swap||OP==Jmp||OP==Jz||OP==Read||OP==Write)
+					begin
+						state<=st_2
+					end
+					else begin
+						state<=st_0;
+					end
+				end
+				
+			end
+			
+			st_2:
+			begin
+				if(clk)
+				if(OP==Swap)
+				begin
+					
+				end
+			end
+		
+		
+		
+		
+		
+		
+		
+		
+		endcase
+	end
+endmodule

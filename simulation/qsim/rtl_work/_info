@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Computer_Organization\course_design\simulation\qsim
+vcomputer
+I44;j^eRj1:dE93E@Wb@n71
+V2jXEVF3:?i1Y^Y:J>K^iV2
+Z1 dC:\Computer_Organization\course_design\simulation\qsim
+w1686242969
+8C:/Computer_Organization/course_design/computer.v
+FC:/Computer_Organization/course_design/computer.v
+L0 19
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Computer_Organization/course_design -O0
+!i10b 1
+!s100 4Jem9I6oz;KZ<WTCfX8S00
+!s85 0
+!s108 1686303266.481000
+!s107 C:/Computer_Organization/course_design/computer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Computer_Organization/course_design|C:/Computer_Organization/course_design/computer.v|
+!s101 -O0
+vcomputer_vlg_tst
+!i10b 1
+!s100 NAoZ8Ekzfbo1eT>]Fd]6B0
+I:BdHV_M`FU>N;>T3CD9l71
+Va3aT1DXo4n212c>Oz3Fg80
+R1
+w1686238424
+8C:/Computer_Organization/course_design/simulation/qsim/course_design_tb.v
+FC:/Computer_Organization/course_design/simulation/qsim/course_design_tb.v
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1686303266.747000
+!s107 C:/Computer_Organization/course_design/simulation/qsim/course_design_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Computer_Organization/course_design/simulation/qsim|C:/Computer_Organization/course_design/simulation/qsim/course_design_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Computer_Organization/course_design/simulation/qsim -O0
+vcpu
+IYX:M:_U4<Sm8Mc8A_aWjG1
+VW`E_U`iCA=9L8]5BO[RE>1
+R1
+w1686303207
+8C:/Computer_Organization/course_design/cpu.v
+FC:/Computer_Organization/course_design/cpu.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 92FkdB1]n]1eC=U;:l>K:0
+!s85 0
+!s108 1686303266.559000
+!s107 C:/Computer_Organization/course_design/cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Computer_Organization/course_design|C:/Computer_Organization/course_design/cpu.v|
+!s101 -O0
+vmif2
+IB6Z0[iW0O0GS5C5Gz_0cF2
+VCA9cIRM@aD8mE];;hDa203
+R1
+w1686242447
+8C:/Computer_Organization/course_design/mif2.v
+FC:/Computer_Organization/course_design/mif2.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 nH3cS^a[Oc`]2jI93oDnQ1
+!s85 0
+!s108 1686303266.638000
+!s107 C:/Computer_Organization/course_design/mif2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Computer_Organization/course_design|C:/Computer_Organization/course_design/mif2.v|
+!s101 -O0

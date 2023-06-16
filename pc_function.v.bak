@@ -1,0 +1,14 @@
+module pc_function(
+
+input plus_flag,
+input manual_flag,
+input [7:0] data_input,
+output reg [7:0] pc,
+
+);
+	always@(posedge plus_flag or posedge manual_flag)
+	begin
+		if(plus_flag) begin pc<=pc+1; end
+		else begin pc<=data_input;	end
+	end
+endmodule

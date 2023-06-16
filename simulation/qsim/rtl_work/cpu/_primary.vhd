@@ -1,0 +1,64 @@
+library verilog;
+use verilog.vl_types.all;
+entity cpu is
+    generic(
+        Idle            : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi0, Hi0);
+        Load            : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi0, Hi1);
+        Move            : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi1, Hi0);
+        Add             : vl_logic_vector(0 to 3) := (Hi0, Hi0, Hi1, Hi1);
+        Sub             : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi0, Hi0);
+        \And\           : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi0, Hi1);
+        \Or\            : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi1, Hi0);
+        \Xor\           : vl_logic_vector(0 to 3) := (Hi0, Hi1, Hi1, Hi1);
+        Shr             : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi0, Hi0);
+        Shl             : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi0, Hi1);
+        Swap            : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi1, Hi0);
+        Jmp             : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi1, Hi1);
+        Jz              : vl_logic_vector(0 to 3) := (Hi1, Hi1, Hi0, Hi0);
+        Read            : vl_logic_vector(0 to 3) := (Hi1, Hi1, Hi0, Hi1);
+        Write           : vl_logic_vector(0 to 3) := (Hi1, Hi1, Hi1, Hi0);
+        Stop            : vl_logic_vector(0 to 3) := (Hi1, Hi1, Hi1, Hi1);
+        st_0            : vl_logic_vector(0 to 2) := (Hi0, Hi0, Hi0);
+        st_1            : vl_logic_vector(0 to 2) := (Hi0, Hi0, Hi1);
+        st_2            : vl_logic_vector(0 to 2) := (Hi0, Hi1, Hi0);
+        st_3            : vl_logic_vector(0 to 2) := (Hi0, Hi1, Hi1);
+        st_4            : vl_logic_vector(0 to 2) := (Hi1, Hi0, Hi0)
+    );
+    port(
+        clk             : in     vl_logic;
+        reset           : in     vl_logic;
+        M_data_in       : in     vl_logic_vector(7 downto 0);
+        Write_read      : out    vl_logic;
+        M_addr          : out    vl_logic_vector(11 downto 0);
+        M_data_out      : out    vl_logic_vector(7 downto 0);
+        overflow        : out    vl_logic;
+        R0              : out    vl_logic_vector(7 downto 0);
+        R1              : out    vl_logic_vector(7 downto 0);
+        R2              : out    vl_logic_vector(7 downto 0);
+        R3              : out    vl_logic_vector(7 downto 0);
+        PC              : out    vl_logic_vector(7 downto 0);
+        state           : out    vl_logic_vector(2 downto 0)
+    );
+    attribute mti_svvh_generic_type : integer;
+    attribute mti_svvh_generic_type of Idle : constant is 1;
+    attribute mti_svvh_generic_type of Load : constant is 1;
+    attribute mti_svvh_generic_type of Move : constant is 1;
+    attribute mti_svvh_generic_type of Add : constant is 1;
+    attribute mti_svvh_generic_type of Sub : constant is 1;
+    attribute mti_svvh_generic_type of \And\ : constant is 1;
+    attribute mti_svvh_generic_type of \Or\ : constant is 1;
+    attribute mti_svvh_generic_type of \Xor\ : constant is 1;
+    attribute mti_svvh_generic_type of Shr : constant is 1;
+    attribute mti_svvh_generic_type of Shl : constant is 1;
+    attribute mti_svvh_generic_type of Swap : constant is 1;
+    attribute mti_svvh_generic_type of Jmp : constant is 1;
+    attribute mti_svvh_generic_type of Jz : constant is 1;
+    attribute mti_svvh_generic_type of Read : constant is 1;
+    attribute mti_svvh_generic_type of Write : constant is 1;
+    attribute mti_svvh_generic_type of Stop : constant is 1;
+    attribute mti_svvh_generic_type of st_0 : constant is 1;
+    attribute mti_svvh_generic_type of st_1 : constant is 1;
+    attribute mti_svvh_generic_type of st_2 : constant is 1;
+    attribute mti_svvh_generic_type of st_3 : constant is 1;
+    attribute mti_svvh_generic_type of st_4 : constant is 1;
+end cpu;

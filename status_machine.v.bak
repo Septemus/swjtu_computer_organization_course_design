@@ -1,0 +1,172 @@
+module status_machine(clk,reset,R0,R1,R2,R3,RX,RY,PC,MAR,MDR,A);
+
+always@(clk or reset)
+	begin
+		if(!reset)
+		begin
+			R0<=0;
+			R1<=0;
+			R2<=0;
+			R3<=0;
+			RX<=0;
+			RY<=0;
+			PC<=0;
+			MAR<=0;
+			MDR<=0;
+			A<=0;
+		end
+		
+		else 
+		begin
+		case(state)
+		
+			st_0:
+			begin
+				if(clk)
+				begin
+					IR<={M_data_in,8'h00};
+					Write_read<=0;
+					PC<=PC+1;
+				end
+				else 
+				begin
+					A<=RY;
+					MAR<=PC;
+					state<=st_1;
+				end
+			end
+			st_1:
+			
+			begin
+
+				if(clk)
+				begin
+					Write_read<=0;
+					case(OP)
+						Load: R0<={4'h0,IR[11:8]};
+						Move: RX<=A;
+						Shr:	RX<={1'b0,RX[7:1]};
+						Shl:  RX<={RX[6:0],1'b0};
+						Add:	RX<=RX+A;
+						Sub:	RX<=RX-A;
+						And:	RX<=RX&A;
+						Or:	RX<=RX|A;
+						Xor:	RX<=RX^A;
+						Swap:	RY<=RX;
+					endcase
+				end
+				else 
+				begin
+					if(OP==Stop)
+					begin
+						state<=st_1;
+					end
+					else if(OP==Swap||OP==Jmp||OP==Jz||OP==Read||OP==Write)
+					begin
+						state<=st_2;
+					end
+					else begin
+						state<=st_0;
+					end
+				end
+				
+			end
+			
+			
+			
+			
+			st_2:
+			begin
+				if(clk)
+				begin
+					Write_read<=0;
+					case(OP)
+						Swap:RX<=A;
+						Jmp:
+						begin
+							IR[7:0]<=M_data_in;
+							MAR<=IR[11:0];
+						end
+						Read:
+						begin
+							IR[7:0]<=M_data_in;
+							MAR<=IR[11:0];
+						end
+						Write:
+						begin
+							IR[7:0]<=M_data_in;
+							MAR<=IR[11:0];
+						end
+						Jz:
+						begin
+							if(R0==0)
+							begin
+								IR<=M_data_in;
+								MAR<=IR[11:0];
+							end
+						end
+						default:
+							MAR<=PC;
+					endcase
+				end
+				else 
+				begin
+					MDR<=R0;
+					if(OP==Swap) state<=st_0;
+					else begin
+						state<=st_3;
+						PC<=PC+1;
+					end
+				end
+			end
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			st_3:
+			begin
+				if(clk)
+				begin
+					if(OP==Jmp) PC<=IR[11:0];
+					else if(OP==Jz&&R0==0) PC<=IR[11:0];
+					else if(OP==Read||OP==Write) MAR<=PC;
+				end
+				else 
+				begin
+					if(OP==Write) Write_read<=1;
+					else Write_read<=0;
+					if(OP==Jmp||OP==Jz) state<=st_0;
+					else state<=st_4;
+				end
+			end
+			
+			
+			st_4:
+			begin
+				if(clk)
+				begin
+					if(OP==Read) R0<=M_data_in;
+				end
+				else 
+				begin
+					Write_read<=0;
+					state<=st_0;
+				end
+			end
+			
+		endcase
+	
+		end
+	
+endmodule

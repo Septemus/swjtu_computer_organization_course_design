@@ -1,0 +1,147 @@
+Flow report for course_design
+Fri Jun 16 15:17:54 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Fri Jun 16 15:17:54 2023       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; course_design                               ;
+; Top-level Entity Name              ; computer                                    ;
+; Family                             ; Cyclone III                                 ;
+; Device                             ; EP3C40F780C8                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 264 / 39,600 ( < 1 % )                      ;
+;     Total combinational functions  ; 247 / 39,600 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 107 / 39,600 ( < 1 % )                      ;
+; Total registers                    ; 107                                         ;
+; Total pins                         ; 75 / 536 ( 14 % )                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 384 / 1,161,216 ( < 1 % )                   ;
+; Embedded Multiplier 9-bit elements ; 0 / 252 ( 0 % )                             ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/16/2023 15:17:24 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; course_design       ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                ;
++--------------------------------------+---------------------------------------------------------+---------------+-------------+------------------+
+; Assignment Name                      ; Value                                                   ; Default Value ; Entity Name ; Section Id       ;
++--------------------------------------+---------------------------------------------------------+---------------+-------------+------------------+
+; COMPILER_SIGNATURE_ID                ; 264355435626489.168689984411616                         ; --            ; --          ; --               ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; tb1              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                      ; --            ; --          ; computer_vlg_tst ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; On                                                      ; --            ; --          ; eda_simulation   ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; computer_vlg_tst                                        ; --            ; --          ; eda_simulation   ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR        ; C:/Computer_Organization/course_design/simulation/qsim/ ; --            ; --          ; eda_simulation   ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                             ; --            ; --          ; eda_simulation   ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)                               ; <None>        ; --          ; --               ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                         ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_FILE                  ; simulation/qsim/course_design_tb.v                      ; --            ; --          ; tb1              ;
+; EDA_TEST_BENCH_FILE                  ; simulation/qsim/course_design_tb.v                      ; --            ; --          ; computer_vlg_tst ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb1                                                     ; --            ; --          ; tb1              ;
+; EDA_TEST_BENCH_MODULE_NAME           ; computer_vlg_tst                                        ; --            ; --          ; computer_vlg_tst ;
+; EDA_TEST_BENCH_NAME                  ; tb1                                                     ; --            ; --          ; eda_simulation   ;
+; EDA_TEST_BENCH_NAME                  ; computer_vlg_tst                                        ; --            ; --          ; eda_simulation   ;
+; EDA_TIME_SCALE                       ; 1 ps                                                    ; --            ; --          ; eda_simulation   ;
+; IP_TOOL_NAME                         ; RAM: 1-PORT                                             ; --            ; --          ; --               ;
+; IP_TOOL_VERSION                      ; 13.1                                                    ; --            ; --          ; --               ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                      ; --            ; --          ; --               ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                       ; --            ; --          ; --               ;
+; MISC_FILE                            ; mif2_bb.v                                               ; --            ; --          ; --               ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                                    ; --            ; --          ; --               ;
+; PARTITION_COLOR                      ; 16764057                                                ; --            ; computer    ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                                   ; --            ; computer    ; Top              ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                                  ; --            ; computer    ; Top              ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                     ; --            ; --          ; --               ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                   ; --            ; --          ; --               ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                            ; --            ; --          ; --               ;
+; TOP_LEVEL_ENTITY                     ; computer                                                ; course_design ; --          ; --               ;
++--------------------------------------+---------------------------------------------------------+---------------+-------------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4669 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:14     ; 1.0                     ; 5416 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4605 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4715 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4562 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:11                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; joeface          ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; joeface          ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; joeface          ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; joeface          ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; joeface          ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off course_design -c course_design
+quartus_fit --read_settings_files=off --write_settings_files=off course_design -c course_design
+quartus_asm --read_settings_files=off --write_settings_files=off course_design -c course_design
+quartus_sta course_design -c course_design
+quartus_eda --read_settings_files=off --write_settings_files=off course_design -c course_design
+
+
+

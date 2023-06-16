@@ -1,0 +1,275 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# A bookmark named "bookmark0" has been added for window "Wave"
+# A bookmarks file was found in the current directory with 3 bookmarks
+# do course_design_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Computer_Organization/course_design {C:/Computer_Organization/course_design/computer.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module computer
+# 
+# Top level modules:
+# 	computer
+# vlog -vlog01compat -work work +incdir+C:/Computer_Organization/course_design {C:/Computer_Organization/course_design/cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# vlog -vlog01compat -work work +incdir+C:/Computer_Organization/course_design {C:/Computer_Organization/course_design/mif2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mif2
+# 
+# Top level modules:
+# 	mif2
+# 
+# vlog -vlog01compat -work work +incdir+C:/Computer_Organization/course_design/simulation/qsim {C:/Computer_Organization/course_design/simulation/qsim/course_design_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module computer_vlg_tst
+# 
+# Top level modules:
+# 	computer_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  computer_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps computer_vlg_tst 
+# Loading work.computer_vlg_tst
+# Loading work.computer
+# Loading work.cpu
+# Loading work.mif2
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Bookmark "bookmark0" already exists with that definition in window "Wave", ignoring
+# A bookmarks file was found in the current directory with 3 bookmarks
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Running testbench
+# Bookmark(s) were restored for window "Source"
+restart
+run -all
+# Running testbench
+# Break in Module cpu at C:/Computer_Organization/course_design/cpu.v line 200
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+step -over -current
+run -all
+# Break in Module cpu at C:/Computer_Organization/course_design/cpu.v line 58
+run -all
+# Break in Module cpu at C:/Computer_Organization/course_design/cpu.v line 58
+run -all
+# Break in Module cpu at C:/Computer_Organization/course_design/cpu.v line 58
+run -all
+# Break in Module cpu at C:/Computer_Organization/course_design/cpu.v line 58
+run -all
+# Break in Module cpu at C:/Computer_Organization/course_design/cpu.v line 58
+# No bookmark changes exist in window "Wave"
